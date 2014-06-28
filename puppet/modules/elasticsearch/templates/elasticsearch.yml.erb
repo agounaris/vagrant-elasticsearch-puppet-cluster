@@ -1,0 +1,10 @@
+
+cluster.name: awesome_search
+
+index.number_of_shards: 5
+
+index.number_of_replicas: 1
+
+network.host: <%= @ipaddress_eth1 %>
+
+discovery.zen.ping.unicast.hosts: [<%= @seeds %>]
